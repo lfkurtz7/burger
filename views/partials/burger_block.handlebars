@@ -1,0 +1,10 @@
+<li>
+
+    {{burger_name}}
+
+    <form action="/api/update" method="post">
+    <input type="hidden" name="id" value="{{id}}">
+    <input type="hidden" name="devoured" value="{{eaten}}">
+    <input type="submit" value="{{#if devoured}} Order More {{else}} Eat Me! {{/if}}">
+    </form>
+</li>
